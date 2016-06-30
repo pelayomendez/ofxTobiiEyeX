@@ -6,11 +6,7 @@
 #include <mutex>
 #include <cassert>
 #include <cstdint>
-#include "stdafx.h"
 
-
-
-#pragma comment (lib, "Tobii.EyeX.Client.lib")
 
 // ID of the global interactor that provides our data stream; must be unique within the application.
 static const TX_STRING InteractorId = "SomethingSomethingName";

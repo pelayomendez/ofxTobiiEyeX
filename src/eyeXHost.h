@@ -1,10 +1,10 @@
 #pragma once
 
 #include "ofMain.h"
-#include "stdafx.h"
 #include "eyex/EyeX.h"
 #include <vector>
 #include <mutex>
+#pragma comment (lib, "Tobii.EyeX.Client.lib")
 
 class eyeXHost {
 	public:

@@ -1,18 +1,18 @@
-www.propeller.se
+(WIP) www.pelayomendez.com based on www.propeller.se version
 
-A wrapper of Tobii EyeX SDK 1.5 (C++) for OpenFrameworks 0.8.6
+A wrapper of Tobii EyeX SDK 1.7 (C++) for OpenFrameworks 0.9.3
 (Windows only!)
 
 Some use instructions:
 
-Don't forget to link dependencies "includes" and "bin" in VS 
-and the "Tobii.EyeX.Client.dll" in the executable folder.
+The Tobii EyeX SDK is not distributed within this repository. 
+You may obtain it from http://developer.tobii.com/ and after that place 
+'x86','x64' and 'include' folders of the distribution inside a folder 
+called 'libs' on the addon.
 
 In file ofApp.h include:
 ```
-#include "../stdafx.h"
-#include "eyex/EyeX.h"
-#include "../eyeXHost.h"
+#include "ofxTobiiEyeX.h"
 ```
 
 In class methods ofApp.h:
