@@ -1,6 +1,8 @@
 # Some general ignore patterns
 
-libs/
+libs/include/
+libs/x86/
+libs/x64/
 */bin/*
 !*/bin/data/
 # for bin folder in root
