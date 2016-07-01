@@ -159,3 +159,16 @@ void eyeXHost::init() {
 	RegisterEventHandler();
 	success &= txEnableConnection(_context) == TX_RESULT_OK;
 }
+
+bool eyeXHost::launchGuestConfiguration() {
+
+	TX_RESULT r = txLaunchConfigurationTool(_context,TX_CONFIGURATIONTOOL_GUESTCALIBRATION, NULL, NULL);
+
+	if (r == TX_RESULT_OK) {
+		return true;
+	}
+	else {
+		return false;
+	}
+
+}

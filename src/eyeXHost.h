@@ -34,4 +34,6 @@ class eyeXHost {
 			void OnActivated(TX_HANDLE hBehavior, int interactorId);
 
 			static bool QueryIsForWindowId(TX_HANDLE hQuery, const TX_CHAR* windowId);
+
+			bool launchGuestConfiguration();
 };
